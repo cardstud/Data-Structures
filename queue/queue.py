@@ -142,6 +142,20 @@ class Queue:
         value = self.storage.remove_head()
         return value
 
+    def display(self):
+        iternode = self.storage.head 
+        while iternode != None:
+            print(iternode.value, "->", end="")
+            iternode = iternode.next_node 
+
+# Test it
+x = Queue()
+
+x.enqueue(8)
+x.enqueue(22)
+x.enqueue("q")
+print(x.display())
+
 """3. What is the difference between using an array vs. a linked list when implementing a Queue?
 
 Queue backed by singly-linked list:
