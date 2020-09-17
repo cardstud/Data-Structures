@@ -142,5 +142,13 @@ class Queue:
         value = self.storage.remove_head()
         return value
 
-# 3. What is the difference between using an array vs. a linked list when 
-#    implementing a Queue?
+"""3. What is the difference between using an array vs. a linked list when implementing a Queue?
+
+Queue backed by singly-linked list:
+    Enqueing worst case is O(1)
+    Dequeing worst case is O(1)
+
+Queue backed by a dynamic array:
+    Enqueing worst case is O(n)
+    Dequeing worst case is O(1)
+"""

@@ -295,7 +295,11 @@ print(x.display())
    implementing a Stack?
 
 Their time complexities will be different.
-    Accessing an element in an array is faster
-    Linked Lists takes linear time so much slower
+
+Stack backed by singly-linked list:
+    The cost to push or pop into a LL stack is O(1) worst case
+
+Stack backed by a dynamic array:
+    The worst case scenario pushing is O(n) and popping is O(1)
 
 """
