@@ -301,5 +301,6 @@ Stack backed by singly-linked list:
 
 Stack backed by a dynamic array:
     The worst case scenario pushing is O(n) and popping is O(1)
+    
 
 """
